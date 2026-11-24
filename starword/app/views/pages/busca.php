@@ -1,0 +1,1 @@
+<section class="pad"><h5><?= $q!==''?'Resultados para “'.e($q).'”':'Categoria: '.e($cat) ?></h5><div class="grid5"><?php if($res) tiles($res,count($res),'lav'); else echo '<p>Nenhum jogo encontrado.</p>'; ?></div><p><a class="btn cyan" href="index.php">Voltar</a></p></section>

@@ -1,0 +1,3 @@
+<section class="pad"><form class="card yellow narrow" method="post"><h4 class="center">Suporte</h4><label>Assunto<input class="in" name="assunto" maxlength="150" required></label>
+<label>Categoria<select class="in" name="categoria"><option>Pagamento</option><option>Conta</option><option>Produto</option></select></label><label>Descrição<textarea class="in" name="descricao" rows="4" required></textarea></label><button class="btn green">Enviar</button></form>
+<table class="tbl"><tr><th>ID</th><th>Assunto</th><th>Categoria</th><th>Status</th></tr><?php foreach($chamados as $c): ?><tr><td><?=$c['id_suporte']?></td><td><?=e($c['assunto'])?></td><td><?=e($c['categoria'])?></td><td><?=e($c['status'])?></td></tr><?php endforeach; ?></table></section>
